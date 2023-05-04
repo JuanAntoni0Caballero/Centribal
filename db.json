@@ -1,0 +1,75 @@
+{
+    "items": [
+        {
+            "reference": 1001,
+            "name": "Product A",
+            "description": "This is a description for Product A",
+            "cost": 10.99,
+            "tax": 20
+        },
+        {
+            "reference": 1002,
+            "name": "Product B",
+            "description": "This is a description for Product B",
+            "cost": 20.99,
+            "tax": 20
+        },
+        {
+            "reference": 1003,
+            "name": "Product C",
+            "description": "This is a description for Product C",
+            "cost": 15.99,
+            "tax": 20
+        },
+        {
+            "reference": 1004,
+            "name": "Product D",
+            "description": "This is a description for Product D",
+            "cost": 12.99,
+            "tax": 20
+        },
+        {
+            "reference": 1005,
+            "name": "Product E",
+            "description": "This is a description for Product E",
+            "cost": 8.99,
+            "tax": 20
+        }
+    ],
+    "order": [
+        {
+            "id": 1,
+            "items": [
+                {
+                    "reference": 1001,
+                    "quantity": 3
+                },
+                {
+                    "reference": 1002,
+                    "quantity": 2
+                },
+                {
+                    "reference": 1005,
+                    "quantity": 1
+                }
+            ],
+            "costWhitoutTax": 86.94,
+            "costWhitTax": 104.33
+        },
+        {
+            "id": 2,
+            "items": [
+                {
+                    "reference": 1003,
+                    "quantity": 2
+                },
+                {
+                    "reference": 1004,
+                    "quantity": 1
+                }
+            ],
+            "costWhitoutTax": 41.97,
+            "costWhitTax": 50.36
+        }
+    ]
+}
