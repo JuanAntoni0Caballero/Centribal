@@ -1,6 +1,7 @@
 {
     "items": [
         {
+            "id": 0,
             "reference": 1001,
             "name": "Product A",
             "description": "This is a description for Product A",
@@ -8,6 +9,7 @@
             "tax": 20
         },
         {
+            "id": 1,
             "reference": 1002,
             "name": "Product B",
             "description": "This is a description for Product B",
@@ -15,6 +17,7 @@
             "tax": 20
         },
         {
+            "id": 2,
             "reference": 1003,
             "name": "Product C",
             "description": "This is a description for Product C",
@@ -22,6 +25,7 @@
             "tax": 20
         },
         {
+            "id": 3,
             "reference": 1004,
             "name": "Product D",
             "description": "This is a description for Product D",
@@ -29,6 +33,7 @@
             "tax": 20
         },
         {
+            "id": 4,
             "reference": 1005,
             "name": "Product E",
             "description": "This is a description for Product E",
