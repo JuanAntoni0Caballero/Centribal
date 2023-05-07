@@ -1,6 +1,5 @@
 'use client'
 
-
 import { useEffect, useState } from 'react'
 import React from 'react'
 import '../../styles/board.css'
@@ -23,7 +22,6 @@ const itemsList = () => {
         itemsService
             .getAllItems()
             .then(response => {
-                console.log('LA DATA ==>', response.data)
                 setItems(response.data)
             })
             .catch(err => console.log(err))
@@ -41,18 +39,19 @@ const itemsList = () => {
                             <th>Referencia</th>
                             <th>Nombre</th>
                             <th>PVP</th>
+                            <th>Details</th>
                         </tr>
                     </thead>
                     <tbody>
                         {items.map((item) => (
 
                             <tr>
-                                <td><Link
-                                    key={item.id}
-                                    href={`/items/${item.id}`}
-                                >{item.reference}</Link></td>
+                                <td>{item.reference}</td>
                                 <td>{item.name}</td>
                                 <td>{item.cost}</td>
+                                <td><Link href={{ pathname: '/details', query: { id: item.id } }} >
+                                    Click
+                                </Link></td>
                             </tr>
 
                         ))}
@@ -60,8 +59,9 @@ const itemsList = () => {
                 </table>
             ) : (
                 <p>Cargando items...</p>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 
 }

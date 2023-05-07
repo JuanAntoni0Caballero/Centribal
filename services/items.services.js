@@ -15,7 +15,7 @@ class ItemsServices {
     }
 
     getOneItem(itemId) {
-        return this.api.get(`/items/${itemId}`)
+        return this.api.get(`items/${itemId}`)
     }
 
     saveItem(itemData) {
